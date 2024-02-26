@@ -1,0 +1,95 @@
+// Aplicando Logica com C# (A)
+
+// QUESTÃO 1
+
+//Console.Write("Digite o ano de nascimento: \n");
+//int anoNascimento = int.Parse(Console.ReadLine());
+
+//int anoAtual = DateTime.Now.Year;
+
+//int idade = anoAtual - anoNascimento;
+
+//Console.WriteLine($"Sua idade é: {idade} anos.");
+
+
+// QUESTÃO 2
+
+//Console.Write("Digite o raio da esfera: \n");
+//double raio = double.Parse(Console.ReadLine());
+
+//double volume = (4.0 / 3.0) * Math.PI * Math.Pow(raio, 3);
+
+//Console.WriteLine($"O volume da esfera é: \n{volume:F2}");
+
+
+// QUESTÃO 3
+
+//Console.Write("Digite o primeiro número: \n");
+//double numero1 = double.Parse(Console.ReadLine());
+
+//Console.Write("Digite o segundo número: \n");
+//double numero2 = double.Parse(Console.ReadLine());
+
+//double soma = numero1 + numero2;
+//double subtracao = numero1 - numero2;
+//double multiplicacao = numero1 * numero2;
+//double divisao = numero1 / numero2;
+
+//Console.WriteLine($"Soma: {soma}");
+//Console.WriteLine($"Subtração: {subtracao}");
+//Console.WriteLine($"Multiplicação: {multiplicacao}");
+//Console.WriteLine($"Divisão: {divisao}");
+
+
+// QUESTÃO 4
+
+//Console.Write("Digite um número: \n");
+//double numero = double.Parse(Console.ReadLine());
+
+//if (numero > 0)
+//{
+//    Console.WriteLine("O número é positivo.");
+//}
+//else if (numero < 0)
+//{
+//    Console.WriteLine("O número é negativo.");
+//}
+//else
+//{
+//    Console.WriteLine("O número é zero.");
+//}
+
+
+// QUESTÃO 5
+
+//Console.Write("Digite o valor em Dólares (US$): \n");
+//double valorDolar = double.Parse(Console.ReadLine());
+
+//Console.Write("Digite a cotação atual do Dólar: \n");
+//double cotacaoDolar = double.Parse(Console.ReadLine());
+
+//double valorReais = valorDolar * cotacaoDolar;
+
+//Console.WriteLine($"O valor em Reais (R$) é: {valorReais.ToString("F2")}");
+
+
+// QUESTÃO 6 
+
+//Console.Write("Digite a primeira nota do aluno: \n");
+//double nota1 = double.Parse(Console.ReadLine());
+
+//Console.Write("Digite a segunda nota do aluno: \n");
+//double nota2 = double.Parse(Console.ReadLine());
+
+//double media = (nota1 + nota2) / 2;
+
+//if (media >= 7)
+//{
+//    Console.WriteLine("Aprovado");
+//    Console.WriteLine("Recebe Certificado");
+//}
+//else
+//{
+//    Console.WriteLine("Reprovado");
+//    Console.WriteLine("Não recebe");
+//}

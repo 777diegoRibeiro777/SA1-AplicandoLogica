@@ -1,0 +1,173 @@
+// Situação de Aprendizagem
+
+
+// QUESTÃO 1
+
+//Console.WriteLine("Digite o comprimento do terreno:");
+//float comprimento = float.Parse(Console.ReadLine());
+//Console.WriteLine("Digite a largura do terreno:");
+//float largura = float.Parse(Console.ReadLine());
+
+//float areaRetangular = comprimento * largura;
+
+//string resultado = areaRetangular.ToString("0.00");
+
+//Console.WriteLine($"A área do terreno em metros quadrados é de: \n{resultado}m²");
+
+
+// QUESTÃO 2
+
+//Console.WriteLine("Quantos cavalos o haras possui?");
+//int quantidadeCavalos = Convert.ToInt32(Console.ReadLine());
+
+//int resultado = quantidadeCavalos * 4;
+
+//Console.WriteLine($"Serão necessárias {resultado} ferraduras.");
+
+
+// QUESTÃO 3
+
+//string name = "";
+//int idade = 0;
+
+
+//Console.WriteLine("Digite seu nome e sua idade.");
+//Console.WriteLine("Nome:");
+//name = Console.ReadLine();
+//Console.WriteLine("Idade:");
+//idade = Convert.ToInt32(Console.ReadLine());
+//int diasVida = idade * 365;
+
+
+//Console.WriteLine($"{name.ToUpper()}, VOCÊ JÁ VIVEU {diasVida} DIAS!!!!!");
+
+
+// QUESTÃO 4
+
+//Console.WriteLine("Digite o preco da gasolina por litro e o valor do pagamento.");
+
+//Console.WriteLine("Preço da gasolina por litro:");
+//decimal gasolinaPorLitro = decimal.Parse(Console.ReadLine());
+
+//Console.WriteLine("Valor do pagamento:");
+//decimal valorPagamento = decimal.Parse(Console.ReadLine());
+
+//decimal litrosNoTanque = valorPagamento / gasolinaPorLitro;
+
+//Console.WriteLine($"A quantidade de litros colocada no tanque foi {litrosNoTanque:F2} litros.");
+
+
+// QUESTÃO 5
+
+//int precoCamisasP = 10;
+//int precoCamisasM = 12;
+//int precoCamisasG = 15;
+
+//Console.WriteLine("Digite a quantidade de camisetas por tamanho.");
+
+//Console.WriteLine("Quantidade de camisetas pequenas (P):");
+//int quantidadeCamisasP = Convert.ToInt32(Console.ReadLine());
+
+//Console.WriteLine("Quantidade de camisetas médias (M):");
+//int quantidadeCamisasM = Convert.ToInt32(Console.ReadLine());
+
+//Console.WriteLine("Quantidade de camisetas grandes (G):");
+//int quantidadeCamisasG = Convert.ToInt32(Console.ReadLine());
+
+//int valorArrecadado = (precoCamisasP * quantidadeCamisasP) + (precoCamisasM * quantidadeCamisasM) + (precoCamisasG * quantidadeCamisasG);
+
+//Console.WriteLine($"O valor total arrecado nesta venda foi de: \nR$ {valorArrecadado},00");
+
+
+// QUESTÃO 6
+
+//double aumento = 0.15;
+//double imposto = 0.08;
+
+//Console.WriteLine("Insira seu salário abaixo:");
+//double salarioAtual = double.Parse(Console.ReadLine());
+
+//double salarioAumento = salarioAtual + aumento;
+//double salarioImposto = salarioAumento - imposto;
+
+//Console.WriteLine($"Salário atual: {salarioAtual:F2} \nSalário com 15% de aumento: {salarioAumento:F2} \nSalário com 8% de imposto sobre o aumento recebido: {salarioImposto:F2}");
+
+
+// QUESTÃO 7
+
+//Console.Write("Digite o raio da base da caixa d'água: \n");
+//double raio = double.Parse(Console.ReadLine());
+
+//Console.Write("Digite a altura da caixa d'água: \n");
+//double altura = double.Parse(Console.ReadLine());
+
+//double volume = Math.PI * Math.Pow(raio, 2) * altura;
+
+//Console.WriteLine($"O volume da caixa d'água cilíndrica é: {volume:F2} metros cúbicos");
+
+
+// QUESTÃO 8
+
+//Console.WriteLine("Insira o valor do produto: \n");
+//double precoNormal = double.Parse(Console.ReadLine());
+
+//Console.WriteLine("Condição de pagamento:\r\n∙ 1 À vista em dinheiro ou cheque, recebe 10% de desconto\r\n∙ 2 À vista no cartão de crédito, recebe 15% de desconto\r\n∙ 3 Em duas vezes, preço normal de etiqueta sem juros\r\n∙ 4 Em duas vezes, preço normal de etiqueta mais juros de 10%");
+//int codigoPagamento = int.Parse(Console.ReadLine());
+
+
+//double novoValor = 0;
+
+//switch (codigoPagamento)
+//{
+//    case 1:
+//        novoValor = precoNormal * 0.9;
+//        break;
+//    case 2:
+//        novoValor = precoNormal * 0.85;
+//        break;
+//    case 3:
+//        novoValor = precoNormal;
+//        break;
+//    case 4:
+//        novoValor = precoNormal * 1.1;
+//        break;
+//    default:
+//        Console.WriteLine("Código de pagamento inválido.");
+//        return;
+//}
+
+//Console.WriteLine($"O valor a ser pago é: \nR$ {novoValor:F2}");
+
+
+// QUESTÃO 9
+
+//Console.Write("Digite o valor em metros: \n");
+//double metros = double.Parse(Console.ReadLine());
+
+//double centimetros = metros * 100;
+//double milimetros = metros * 1000;
+//double quilometros = metros / 1000;
+
+//Console.WriteLine($"{centimetros:F2} centímetros");
+//Console.WriteLine($"{milimetros:F2} milímetros");
+//Console.WriteLine($"{quilometros:F2} quilômetros");
+
+
+// QUESTÃO 10
+
+//Console.Write("Digite a quantidade de latas de 350 ml: \n");
+//int latas350ml = int.Parse(Console.ReadLine());
+
+//Console.Write("Digite a quantidade de garrafas de 600 ml: \n");
+//int garrafas600ml = int.Parse(Console.ReadLine());
+
+//Console.Write("Digite a quantidade de garrafas de 2 litros: \n");
+//int garrafas2litros = int.Parse(Console.ReadLine());
+
+//double litrosTotal = 0;
+
+//litrosTotal += latas350ml * 350 / 1000.0; 
+//litrosTotal += garrafas600ml * 600 / 1000.0;
+//litrosTotal += garrafas2litros * 2;
+
+//Console.WriteLine($"O comerciante comprou um total de {litrosTotal} litros de refrigerante.");
